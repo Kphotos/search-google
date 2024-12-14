@@ -2,6 +2,14 @@
   margin:0;
   padding:0;
 }
+.itemsy{
+  background-color: red;
+  border:1px solid black;
+}
+body{
+  display:flex;
+  flex-direction: column;
+}
 .flexR{
   display:flex;
   gap:8px;
@@ -16,6 +24,7 @@
   display:grid;
   grid-template-columns: repeat(12, 1fr);
   gap:8px;
+  /* background-color: pink; */
   
 }
 /* START NAVIGATION */
@@ -90,7 +99,7 @@ nav {
 }
 .google img{
   max-width: 60%;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .search{
@@ -136,12 +145,10 @@ nav {
 footer{
   grid-column: 1/13;
   background-color: pink;
-  margin: 50px 0 0 0;
-  min-height: 100%;
-  
   display:flex;
   justify-content: space-between;
   align-items: center;
+  justify-self: self-end;
 }
 .footer-items{
   display:flex;
